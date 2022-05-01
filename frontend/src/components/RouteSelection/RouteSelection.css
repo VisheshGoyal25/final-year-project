@@ -19,4 +19,11 @@
 .dropdown>.dropdown-toggle:active {
     pointer-events: none;
 }
+.bgfix{
+    width: 130%;
+    background-color: rgba(189, 12, 167, 0.85);
+    margin-left: -15%;
+    /* background-color: rgb(189 12 167 / 85%); */
+    /* backgroundColor: 'rgb(189 12 167 / 85%)' */
+}
 
