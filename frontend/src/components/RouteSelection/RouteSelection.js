@@ -13,7 +13,7 @@ export default function RouteSelection() {
     }
     
     return (
-        <div style={{backgroundColor: 'rgb(189 12 167 / 85%)' }} className="container">
+        <div style={{backgroundColor: 'rgb(189 12 167 / 85%)', marginLeft: '-15%',width:'130%'   }} className="container">
             <div>
                 <nav className="mb-4 navbar navbar-expand-lg navbar-dark bg-unique hm-gradient">
                     <a href="/#" className="navbar-brand Company-Log">UT</a>
