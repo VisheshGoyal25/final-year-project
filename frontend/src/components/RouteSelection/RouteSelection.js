@@ -37,13 +37,13 @@ export default function RouteSelection() {
                     <li className="nav-item">
                         <a className="nav-link active" data-toggle="pill" href="#home">Select Bus</a>
                     </li>
-                    <li className="nav-item" disabled>
+                    <li className="nav-item" >
                         {bus_id!=="null"?<a className="nav-link " data-toggle="pill"  href="#menu1" >Select Seat</a>:
                         <span className="nav-link " data-toggle="pill"   >Select Seat</span>}
                     </li>
-                    <li className="nav-item" disabled>
-                        {bus_data.length!==0?<a className="nav-link" data-toggle="pill" href="#menu2">Payment</a>:
-                        <span className="nav-link" data-toggle="pill" >Payment</span>}
+                    <li className="nav-item">
+                        {bus_id!=="null" && bus_data.length!==0?<a className="nav-link" data-toggle="pill" href="#menu2">Payment</a>:
+                        <span className="nav-link" data-toggle="pill">Payment</span>}
                     </li>
                 </ul>
                 <div className="tab-content">
