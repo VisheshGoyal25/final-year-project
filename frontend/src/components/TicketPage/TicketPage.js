@@ -72,7 +72,7 @@ export default function TicketPage() {
                 <article className="ticket">
                     <header className="ticket__wrapper">
                         <div className="ticket__header">
-                            1 🎟 UNIQUE TRAVELS
+                            1 🎟 Travel Booking System
                         </div>
                     </header>
                     <div className="ticket__divider">

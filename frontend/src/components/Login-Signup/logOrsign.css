@@ -19,7 +19,7 @@ a, a:hover {
 
 .myform-area .form-area {
     position: relative;
-    background: rgba(103, 58, 183, 0.7);
+    background: rgb(189 12 167 / 85%);
     width: 700px;
     height: 400px;
     overflow: hidden;
@@ -65,7 +65,7 @@ a, a:hover {
     position: relative;
     top: -39px;
     padding: 8px 140px;
-    background: #3B579D;
+    background: #c98520;
     color: #fff;
     font-size: 15px;
     text-transform: capitalize;

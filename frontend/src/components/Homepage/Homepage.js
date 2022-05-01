@@ -10,7 +10,10 @@ export default function Homepage({ history }) {
     return (
         <div className='container maint-cnt'>
             <div className="header-nav">
-                <span className="mytext1"> Unique Travels </span>
+                <span className="mytext1"> Travel </span>
+                <span className="mytext1"> Booking </span>
+                <span className="mytext1"> System </span>
+
             </div>
             
             <div className="">
@@ -18,14 +21,14 @@ export default function Homepage({ history }) {
 
             <div className="container">
                 <div className="slogan">
-                    <h1>
+                    {/* <h1>
                         <span>always Travel</span>
                         <div className="message">
                             <div className="word1">Uniquely</div>
                             <div className="word2">Safely</div>
                             <div className="word3">with a smile</div>
                         </div>
-                    </h1>
+                    </h1> */}
                 </div>
 
                 <a href="/#" onClick={e => enterSite(e)} className="mainBtn">

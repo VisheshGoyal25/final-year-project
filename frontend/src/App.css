@@ -1,5 +1,9 @@
 body {
-    background: url('./bg.jpg');
+    /* background: url('./download1.jpg'); */
+    background-image: url('./download1.jpg');
+    /* background: rgba(0, 0, 0, 1); */
+    /* background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(/download1.jpg); */
+    backface-visibility: hidden;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -7,7 +11,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
 .page{
     position: absolute;
 }
@@ -30,5 +33,10 @@ body {
 .fade-exit.fade-exit-active{
     opacity: 1;
     transition: opacity 150ms linear;
+    border-radius: 50rem;
 
+}
+.nav-pills .nav-link {
+    border-radius: 50rem;
+    color: white;
 }

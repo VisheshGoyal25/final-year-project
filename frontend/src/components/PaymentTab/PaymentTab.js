@@ -173,7 +173,7 @@ export default class App extends React.Component {
              </div>  
              </form>  </div>  </div>  
              <div className = 'columnTwo' >
-            <h3> Unique Travels </h3>  
+            <h3> Travel Booking System </h3>  
             <div>
             <p > BOOKING DETAILS </p>  
             <div className = 'row' >

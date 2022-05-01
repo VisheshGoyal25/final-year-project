@@ -13,7 +13,7 @@ export default function RouteSelection() {
     }
     
     return (
-        <div className="container">
+        <div style={{backgroundColor: 'rgb(189 12 167 / 85%)' }} className="container">
             <div>
                 <nav className="mb-4 navbar navbar-expand-lg navbar-dark bg-unique hm-gradient">
                     <a href="/#" className="navbar-brand Company-Log">UT</a>
@@ -41,9 +41,9 @@ export default function RouteSelection() {
                         {bus_id!=="null"?<a className="nav-link " data-toggle="pill"  href="#menu1" >Select Seat</a>:
                         <span className="nav-link " data-toggle="pill"   >Select Seat</span>}
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" disabled>
                         {bus_data.length!==0?<a className="nav-link" data-toggle="pill" href="#menu2">Payment</a>:
-                        <span className="nav-link" data-toggle="pill" href="#menu2">Payment</span>}
+                        <span className="nav-link" data-toggle="pill" >Payment</span>}
                     </li>
                 </ul>
                 <div className="tab-content">
