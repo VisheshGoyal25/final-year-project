@@ -39,11 +39,11 @@ export default function RouteSelection() {
                     </li>
                     <li className="nav-item" >
                         {bus_id!=="null"?<a className="nav-link " data-toggle="pill"  href="#menu1" >Select Seat</a>:
-                        <span className="nav-link " data-toggle="pill"   >Select Seat</span>}
+                        <></>}
                     </li>
                     <li className="nav-item">
                         {bus_id!=="null" && bus_data.length!==0?<a className="nav-link" data-toggle="pill" href="#menu2">Payment</a>:
-                        <span className="nav-link" data-toggle="pill">Payment</span>}
+                        <></>}
                     </li>
                 </ul>
                 <div className="tab-content">
