@@ -10,11 +10,13 @@ export default function SeatSelection({setData}) {
         renderPassengerData(seatNumber)
         let newSeat = e.target.value
         if (reservedSeat.includes(newSeat)) {
-            e.disabled = true
             if (seatNumber.includes(newSeat)) {
                 setSeatnumber(seatNumber.filter(seat => seat !== newSeat))
+                setReservedSeat(reservedSeat.filter(seat => seat !== newSeat))
             }
+
         } else {
+           
             setSeatnumber([...seatNumber, newSeat])
             setReservedSeat([...reservedSeat, newSeat])
             console.log(seatNumber)
