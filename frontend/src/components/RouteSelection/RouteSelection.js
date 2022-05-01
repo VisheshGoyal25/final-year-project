@@ -16,7 +16,7 @@ export default function RouteSelection() {
         <div style={{backgroundColor: 'rgb(189 12 167 / 85%)', marginLeft: '-15%',width:'130%'   }} className="container">
             <div>
                 <nav className="mb-4 navbar navbar-expand-lg navbar-dark bg-unique hm-gradient">
-                    <a href="/#" className="navbar-brand Company-Log">UT</a>
+                    <a href="/#" className="navbar-brand Company-Log">Travel Booking System</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
