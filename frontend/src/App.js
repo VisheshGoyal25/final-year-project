@@ -27,6 +27,9 @@ function App() {
         .then((resObject) => {
           resObject.user.auth=resObject.auth;
           console.log(resObject.user)
+          localStorage.setItem("email",JSON.stringify( resObject.user.email))
+          localStorage.setItem("name",JSON.stringify( resObject.user.name))
+
           setUser(resObject.user);
         })
         .catch((err) => {
