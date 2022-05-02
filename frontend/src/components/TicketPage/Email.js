@@ -1,20 +1,21 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const ContactUs = () => {
+export default  function Email() {
   const form = useRef();
   const data=JSON.parse( localStorage.getItem("data"));
   let from = localStorage.getItem("from")
     let to = localStorage.getItem("to")
-    let name=localStorage.getItem("name")    
-    let email=localStorage.getItem("email")
+    let name=JSON.parse(localStorage.getItem("name"))    
+    let email=JSON.parse(localStorage.getItem("email"))
     data.push(from);
     data.push(to);
     data.push(name)
     data.push(email)
     console.log(data);
-    //sendEmail();
-
+    useEffect(()=>{
+      sendEmail();
+    })
     // emailjs.sendForm("service_kp5tozv", "template_q0iniri", form.current, "fNURaBOmdvOWNS683")
     //   .then((result) => {
     //       console.log(result.text);
@@ -22,8 +23,7 @@ export const ContactUs = () => {
     //       console.log(error.text);
     //   });
   
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = () => {
     //let sex=new FormData();
     emailjs.sendForm("service_kp5tozv", "template_q0iniri", form.current, "fNURaBOmdvOWNS683")
       .then((result) => {
@@ -33,16 +33,13 @@ export const ContactUs = () => {
       });
   };
 
-
+  
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+    <form ref={form} onSubmit={sendEmail} style={{display:"none"}}>
+      <input type="text" name="user_name"  value={name}></input>
+      <input type="email" name="user_email" value={email}></input>
+      <input  type="text" name ="from" value={from} ></input>
+      <input  type="text" name ="to" value={to} ></input> 
     </form>
   );
 };

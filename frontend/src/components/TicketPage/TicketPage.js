@@ -1,6 +1,6 @@
 import React from 'react'
 import './TicketPage.css'
-import {sendEmail,ContactUs}  from './Email';
+import Email from './Email';
 export default function TicketPage() {
      const data=JSON.parse( localStorage.getItem("data"));
     const handleSignOut = e => {
@@ -41,7 +41,6 @@ export default function TicketPage() {
     }
     const getIdNumber = () => {
         console.log("ticket show");
-        ContactUs();
         //sendEmail(data);
         return (
             <p className="idData">
@@ -103,7 +102,7 @@ export default function TicketPage() {
                     </footer>
                 </article>
             </div>
-
+           <Email/>
         </div>
 
     )
