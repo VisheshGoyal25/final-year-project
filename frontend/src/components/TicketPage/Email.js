@@ -16,15 +16,7 @@ export default  function Email() {
     useEffect(()=>{
       sendEmail();
     })
-    // emailjs.sendForm("service_kp5tozv", "template_q0iniri", form.current, "fNURaBOmdvOWNS683")
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
-  
   const sendEmail = () => {
-    //let sex=new FormData();
     emailjs.sendForm("service_kp5tozv", "template_q0iniri", form.current, "fNURaBOmdvOWNS683")
       .then((result) => {
           console.log(result.text);
